@@ -5,34 +5,90 @@
     font-size: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    padding: 16px 24px;
+    padding-bottom: 24px;
     background: #000;
-    color: #BFBFBF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-}
-
-#status {
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-h1 {
     color: #FFF;
 }
 
-h2 {
-    margin-bottom: 1em;
+#status {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+}
+
+#header {
+    background: #333 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.2)), color-stop(50%, rgba(255,255,255,0.05)), color-stop(50%, transparent));
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #111;
+    padding: 8px 24px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+#update {
+    position: absolute;
+    display: block;
+    right: 8px;
+    top: 50%;
+    background: rgba(0,0,0,0.3) -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.2)), color-stop(50%, rgba(255,255,255,0.1)), color-stop(50%,transparent));
+    color: #FFF;
+    height: 34px;
+    margin-top: -18px;
+    line-height: 34px;
+    padding: 0 8px;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: rgba(255,255,255,0.2) 0 1px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,0.6) 0 -1px 0;
+    
+    -webkit-animation-name: 'glow';
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+#update[disabled="disabled"] {
+    color: #666;
+    -webkit-animation-name: none;
+}
+
+@-webkit-keyframes 'glow' {
+    0% {
+        -webkit-box-shadow: rgba(255,255,255,0.2) 0 1px 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+    100% {
+        -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 5px;
+        background-color: rgba(0,0,0,0.1);
+    }
 }
 
 h1, h2 {
     font-size: 18px;
     line-height: 1;
+    text-shadow: #000 0 1px 0;
+}
+
+h2 {
+    color: #999;
 }
 
 #text {
-    white-space: pre;
+    color: #FFF;
+    padding-left: 44px;
+    padding-right: 24px;
+    text-indent: -20px;
 }
