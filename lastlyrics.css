@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    padding: 16px 24px;
+    background: #000;
+    color: #BFBFBF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#status {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #FFF;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h1, h2 {
+    font-size: 18px;
+    line-height: 1;
+}
+
+#text {
+    white-space: pre;
+}
