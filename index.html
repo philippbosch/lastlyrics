@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en" _manifest="cache.manifest">
     <head>
         <meta charset="utf-8">
         <title>Last Lyrics</title>
@@ -13,12 +13,27 @@
     </head>
     
     <body>
-        <div id="status"></div>
-        <div id="header">
-            <h1>&nbsp;</h1>
-            <h2>&nbsp;</h2>
-            <a href="#update" id="update">Update</a>
+        <div id="container">
+            <div id="card">
+                <div id="lyrics" class="face">
+                    <div id="status"></div>
+                    <div id="header">
+                        <h1>&nbsp;</h1>
+                        <h2>&nbsp;</h2>
+                        <a href="#update" id="update">Update</a>
+                    </div>
+                    <div id="text"></div>
+                </div>
+                
+                <div id="preferences" class="face">
+                    <form>
+                        <fieldset>
+                            <input id="username" type="text" placeholder="last.fm username">
+                        </fieldset>
+                        <button type="button" id="save">Save</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="text"></div>
     </body>
 </html>
